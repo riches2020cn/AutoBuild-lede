@@ -6,7 +6,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #=================================================
 
-name: Build_x86
+name: Build_test
 
 # Add a button to trigger the workflow
 on: 
@@ -99,7 +99,7 @@ jobs:
     #    rm -rf feeds/luci/themes/luci-theme-argon
     #    git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git feeds/luci/themes/luci-theme-argon
 
-    - name: Configuration Customization - Build_x86
+    - name: Configuration Customization - Build_test
       env:
         CONFIG_FILE: 'x86.config'
       run: |
